@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template
 import pyodbc
 
 app = Flask(__name__)
@@ -29,5 +29,3 @@ def form():
 
     return render_template("form.html")
 
-if __name__ == "__main__":
-    app.run()
